@@ -1,0 +1,318 @@
+<style>
+
+/* 전체 화면 */
+body{
+font-family:Arial;
+}
+
+/* 모바일 가독성 */
+.container{
+max-width:520px;
+margin:auto;
+line-height:1.8;
+padding-bottom:200px;
+}
+
+/* 라디오 버튼 크게 */
+input[type="radio"]{
+transform:scale(1.6);
+margin-right:10px;
+}
+
+/* 선택 터치 효과 */
+label:active{
+background:#f2f5ff;
+}
+
+/* 문제 사이 간격 */
+.question{
+margin-top:35px;
+}
+
+</style>
+
+
+<div class="container">
+
+<h2 style="font-size:28px;">🏀 스포츠 MBTI 검사</h2>
+
+<form id="mbtiForm">
+
+<!-- 학생 정보 입력 -->
+<div style="background:#f7f7f7;padding:20px;border-radius:10px;margin-bottom:30px;">
+
+<h3>학생 정보 입력</h3>
+
+<label>학교명:</label><br>
+
+<select name="school" required style="width:100%;padding:8px;margin-bottom:10px;">
+<option value="">학교 선택</option>
+<option value="잠신고">잠신고</option>
+<option value="서울고">서울고</option>
+<option value="서울체고">서울체고</option>
+<option value="서서울생활과학고">서서울생활과학고</option>
+<option value="잠신중">잠신중</option>
+<option value="송파중">송파중</option>
+<option value="서울체중">서울체중</option>
+<option value="신양중">신양중</option>
+<option value="테스트">테스트</option>
+</select><br>
+
+
+<label>학년:</label><br>
+
+<select name="grade" required style="width:100%;padding:8px;margin-bottom:10px;">
+<option value="">학년 선택</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+</select><br>
+
+
+<label>반:</label><br>
+
+<select name="classNum" required style="width:100%;padding:8px;margin-bottom:10px;">
+<option value="">반 선택</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+</select><br>
+
+
+<label>번호:</label><br>
+
+<select name="number" required style="width:100%;padding:8px;margin-bottom:10px;">
+<option value="">번호 선택</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+<option value="32">32</option>
+<option value="33">33</option>
+<option value="34">34</option>
+<option value="35">35</option>
+<option value="36">36</option>
+<option value="37">37</option>
+<option value="38">38</option>
+<option value="39">39</option>
+<option value="40">40</option>
+</select><br>
+
+
+<label>이름:</label><br>
+
+<input type="text" name="name" required style="width:100%;padding:8px;margin-bottom:10px;">
+
+</div>
+
+
+<h2>스포츠 MBTI 설문</h2>
+
+<p>각 문항에서 자신과 더 가까운 것을 선택하세요.</p>
+
+
+<!-- 1 -->
+<p class="question"><b>1. 체육 시간이 시작된다! 더 설레는 순간은?</b></p>
+<label><input type="radio" name="q1" value="A" required> A. 넓은 운동장이나 자연 속 활동하는 시간이다.</label><br>
+<label><input type="radio" name="q1" value="B"> B. 체육관에서 집중하며 기술을 배우는 시간이다.</label>
+
+
+<!-- 2 -->
+<p class="question"><b>2. 내가 더 좋아하는 체육 분위기는?</b></p>
+<label><input type="radio" name="q2" value="A" required> A. 햇빛과 바람을 느끼며 움직이는 활동이다.</label><br>
+<label><input type="radio" name="q2" value="B"> B. 실내에서 차분하게 집중하는 활동이다.</label>
+
+
+<!-- 3 -->
+<p class="question"><b>3. 생태형 스포츠 활동이 있다면?</b></p>
+<label><input type="radio" name="q3" value="A" required> A. 트레킹, 캠핑, 야외도전 활동이 끌린다.</label><br>
+<label><input type="radio" name="q3" value="B"> B. 실내 종목을 깊이 배우는 것이 더 좋다.</label>
+
+
+<!-- 4 -->
+<p class="question"><b>4. 체육 수행평가를 준비할 때 나는?</b></p>
+<label><input type="radio" name="q4" value="A" required> A. 친구들과 크게 움직이는 활동이 좋다.</label><br>
+<label><input type="radio" name="q4" value="B"> B. 나만의 기술을 완성해가는 활동이 좋다.</label>
+
+
+<!-- 5 -->
+<p class="question"><b>5. 방과 후 운동을 선택한다면?</b></p>
+<label><input type="radio" name="q5" value="A" required> A. 운동장, 공원 등 야외 활동을 선택한다.</label><br>
+<label><input type="radio" name="q5" value="B"> B. 체육관이나 실내 종목을 선택한다.</label>
+
+<!-- 6 -->
+<p class="question"><b>6. 스포츠를 배울 때 나는?</b></p>
+<label><input type="radio" name="q6" value="A" required> A. 일단 몸으로 해보는 게 좋다.</label><br>
+<label><input type="radio" name="q6" value="B"> B. 원리와 전략을 먼저 이해하고 싶다.</label>
+
+<!-- 7 -->
+<p class="question"><b>7. 경쟁 스포츠 상황에서 나는?</b></p>
+<label><input type="radio" name="q7" value="A" required> A. 직접 뛰며 흐름을 체감하는 게 좋다.</label><br>
+<label><input type="radio" name="q7" value="B"> B. 작전을 세우고 분석하는 게 더 재미있다.</label>
+
+<!-- 8 -->
+<p class="question"><b>8. 스포츠 영상을 본다면?</b></p>
+<label><input type="radio" name="q8" value="A" required> A. 나도 따라 해보고 싶다.</label><br>
+<label><input type="radio" name="q8" value="B"> B. 전술과 움직임을 분석하게 된다.</label>
+
+<!-- 9 -->
+<p class="question"><b>9. 새로운 뉴스포츠를 접한다면?</b></p>
+<label><input type="radio" name="q9" value="A" required> A. 규칙을 듣고 바로 참여하고 싶다.</label><br>
+<label><input type="radio" name="q9" value="B"> B. 전체 전략 구조가 궁금하다.</label>
+
+<!-- 10 -->
+<p class="question"><b>10. 체육 수업에서 더 흥미로운 순간은?</b></p>
+<label><input type="radio" name="q10" value="A" required> A. 실제 경기에 참여하는 시간이다.</label><br>
+<label><input type="radio" name="q10" value="B"> B. 전술 토론이나 전략 짜기 시간이다.</label>
+
+<!-- 11 -->
+<p class="question"><b>11. 팀 스포츠에서 가장 중요한 것은?</b></p>
+<label><input type="radio" name="q11" value="A" required> A. 팀워크와 분위기다.</label><br>
+<label><input type="radio" name="q11" value="B"> B. 승리와 결과다.</label>
+
+<!-- 12 -->
+<p class="question"><b>12. 경기를 마친 후 나는?</b></p>
+<label><input type="radio" name="q12" value="A" required> A. 서로 격려하는 시간이 더 기억에 남는다.</label><br>
+<label><input type="radio" name="q12" value="B"> B. 점수와 기록이 먼저 떠오른다.</label>
+
+<!-- 13 -->
+<p class="question"><b>13. 수행평가를 준비할 때 나는?</b></p>
+<label><input type="radio" name="q13" value="A" required> A. 모두가 참여하는 과정이 중요하다.</label><br>
+<label><input type="radio" name="q13" value="B"> B. 높은 완성도와 결과가 중요하다.</label>
+
+<!-- 14 -->
+<p class="question"><b>14. 경쟁 스포츠의 의미는?</b></p>
+<label><input type="radio" name="q14" value="A" required> A. 함께 성장하는 경험이다.</label><br>
+<label><input type="radio" name="q14" value="B"> B. 실력을 증명하는 기회다.</label>
+
+<!-- 15 -->
+<p class="question"><b>15. 팀 구성 시 나는?</b></p>
+<label><input type="radio" name="q15" value="A" required> A. 분위기가 잘 맞는 친구와 하고 싶다.</label><br>
+<label><input type="radio" name="q15" value="B"> B. 실력이 좋은 친구와 하고 싶다.</label>
+
+<!-- 16 -->
+<p class="question"><b>16. 운동 계획은?</b></p>
+<label><input type="radio" name="q16" value="A" required> A. 목표를 세우고 계획적으로 한다.</label><br>
+<label><input type="radio" name="q16" value="B"> B. 그날 기분에 따라 한다.</label>
+
+<!-- 17 -->
+<p class="question"><b>17. 반복 훈련이 있다면?</b></p>
+<label><input type="radio" name="q17" value="A" required> A. 지루해도 꾸준히 한다.</label><br>
+<label><input type="radio" name="q17" value="B"> B. 재미없으면 금방 흥미가 떨어진다.</label>
+
+<!-- 18 -->
+<p class="question"><b>18. 기록 향상 목표가 있다면?</b></p>
+<label><input type="radio" name="q18" value="A" required> A. 꾸준히 관리하며 도전한다.</label><br>
+<label><input type="radio" name="q18" value="B"> B. 컨디션 좋을 때 집중한다.</label>
+
+<!-- 19 -->
+<p class="question"><b>19. 준비운동 시간에 나는?</b></p>
+<label><input type="radio" name="q19" value="A" required> A. 정해진 루틴을 지키는 편이다.</label><br>
+<label><input type="radio" name="q19" value="B"> B. 상황에 맞게 자유롭게 한다.</label>
+
+<!-- 20 -->
+<p class="question"><b>20. 한 종목을 배우게 된다면?</b></p>
+<label><input type="radio" name="q20" value="A" required> A. 깊이 있게 오래 배우고 싶다.</label><br>
+<label><input type="radio" name="q20" value="B"> B. 여러 종목을 다양하게 경험하고 싶다.</label>
+  
+<br><br>
+<button type="submit" style="padding:12px 25px;font-size:16px;">결과 보기</button>
+</form>
+<div id="resultBox" style="margin-top:40px;display:none;"></div>
+<script>
+document.getElementById("mbtiForm").onsubmit=function(e){
+e.preventDefault();
+let EI=0,SN=0,TF=0,JP=0;
+for(let i=1;i<=20;i++){
+let val=document.querySelector('input[name="q'+i+'"]:checked').value;
+if(i<=5){if(val==="A")EI++;else EI--;}
+else if(i<=10){if(val==="A")SN++;else SN--;}
+else if(i<=15){if(val==="A")TF++;else TF--;}
+else{if(val==="A")JP++;else JP--;}
+}let type=(EI>=0?"E":"I")+(SN>=0?"S":"N")+(TF>=0?"F":"T")+(JP>=0?"J":"P");
+const descriptions={
+INTJ:{title:"경기 설계자",desc:"경기의 흐름을 읽고 전략을 세우며 팀에 가장 효과적인 플레이를 계획하는 스포츠 플레이어",link:"https://sites.google.com/view/sports-mbti/%ED%99%88/intj-%EA%B2%BD%EA%B8%B0-%EC%84%A4%EA%B3%84%EC%9E%90"},
+INTP:{title:"스포츠 연구자",desc:"경기의 움직임과 원리를 분석하며 더 좋은 플레이 방법을 탐구하는 스포츠 플레이어",link:"https://sites.google.com/view/sports-mbti/%ED%99%88/intp-%EC%8A%A4%ED%8F%AC%EC%B8%A0-%EC%97%B0%EA%B5%AC%EC%9E%90"},
+ENTJ:{title:"팀 지휘관",desc:"목표와 전략을 중심으로 팀을 조직하고 경기를 주도적으로 이끄는 스포츠 플레이어",link:"https://sites.google.com/view/sports-mbti/%ED%99%88/entj-%ED%8C%80-%EC%A7%80%ED%9C%98%EA%B4%80"},
+ENTP:{title:"전술 실험가",desc:"새로운 전략과 아이디어를 시도하며 창의적인 플레이로 경기의 변화를 만들어내는 스포츠 플레이어",link:"https://sites.google.com/view/sports-mbti/%ED%99%88/entp-%EC%A0%84%EC%88%A0-%EC%8B%A4%ED%97%98%EA%B0%80"},
+INFJ:{title:"팀 멘토",desc:"팀의 분위기와 관계를 살피며 팀원들이 조화롭게 협력하도록 돕는 스포츠 플레이어",link:"https://sites.google.com/view/sports-mbti/%ED%99%88/infj-%ED%8C%80-%EB%A9%98%ED%86%A0"},
+INFP:{title:"스포츠 낭만가",desc:"스포츠의 즐거움과 의미를 중요하게 생각하며 진심으로 경기를 즐기는 스포츠 플레이어",link:"https://sites.google.com/view/sports-mbti/%ED%99%88/infp-%EC%8A%A4%ED%8F%AC%EC%B8%A0-%EB%82%AD%EB%A7%8C%EA%B0%80"},
+ENFJ:{title:"응원 리더",desc:"팀원들을 격려하고 응원하며 팀의 에너지와 분위기를 끌어올리는 스포츠 플레이어",link:"https://sites.google.com/view/sports-mbti/%ED%99%88/enfj-%EC%9D%91%EC%9B%90-%EB%A6%AC%EB%8D%94"},
+ENFP:{title:"플레이 메이커",desc:"밝은 에너지와 창의적인 움직임으로 경기의 분위기를 활기차게 만드는 스포츠 플레이어",link:"https://sites.google.com/view/sports-mbti/%ED%99%88/enfp-%ED%94%8C%EB%A0%88%EC%9D%B4-%EB%A9%94%EC%9D%B4%EC%BB%A4"},
+ISTJ:{title:"기록 사냥꾼",desc:"기본기와 꾸준함을 바탕으로 자신의 기록과 실력을 꾸준히 발전시키는 스포츠 플레이어",link:"https://sites.google.com/view/sports-mbti/%ED%99%88/istj-%EA%B8%B0%EB%A1%9D-%EC%82%AC%EB%83%A5%EA%BE%BC"},
+ISFJ:{title:"팀 서포터",desc:"팀원들을 세심하게 도우며 팀이 안정적으로 경기할 수 있도록 지원하는 스포츠 플레이어",link:"https://sites.google.com/view/sports-mbti/%ED%99%88/isfj-%ED%8C%80-%EC%84%9C%ED%8F%AC%ED%84%B0"},
+ESTJ:{title:"승부 감독",desc:"체계적인 판단과 리더십으로 팀의 전략과 경기를 안정적으로 운영하는 스포츠 플레이어",link:"https://sites.google.com/view/sports-mbti/%ED%99%88/estj-%EC%8A%B9%EB%B6%80-%EA%B0%90%EB%8F%85"},
+ESFJ:{title:"팀 분위기 메이커",desc:"팀원들과 적극적으로 소통하며 팀워크와 긍정적인 분위기를 만들어가는 스포츠 플레이어",link:"https://sites.google.com/view/sports-mbti/%ED%99%88/esfj-%ED%8C%80-%EB%B6%84%EC%9C%84%EA%B8%B0-%EB%A9%94%EC%9D%B4%EC%BB%A4"},
+ISTP:{title:"기술 장인",desc:"뛰어난 기술과 빠른 판단으로 실전에서 문제를 해결하는 스포츠 플레이어",link:"https://sites.google.com/view/sports-mbti/%ED%99%88/istp-%EA%B8%B0%EC%88%A0-%EC%9E%A5%EC%9D%B8"},
+ISFP:{title:"자유 플레이어",desc:"자신만의 감각적인 움직임으로 자유롭게 경기를 즐기는 스포츠 플레이어",link:"https://sites.google.com/view/sports-mbti/%ED%99%88/isfp-%EC%9E%90%EC%9C%A0-%ED%94%8C%EB%A0%88%EC%9D%B4%EC%96%B4"},
+ESTP:{title:"승부 사냥꾼",desc:"빠른 판단과 과감한 플레이로 승부의 흐름을 바꾸는 스포츠 플레이어",link:"https://sites.google.com/view/sports-mbti/%ED%99%88/estp-%EC%8A%B9%EB%B6%80-%EC%82%AC%EB%83%A5%EA%BE%BC"},
+ESFP:{title:"에너지 스타",desc:"활기찬 에너지와 즐거운 분위기로 경기를 더욱 재미있게 만드는 스포츠 플레이어",link:"https://sites.google.com/view/sports-mbti/%ED%99%88/esfp-%EC%97%90%EB%84%88%EC%A7%80-%EC%8A%A4%ED%83%80"}
+};
+let result=descriptions[type];
+  fetch("https://script.google.com/macros/s/AKfycbw0_vYARMaXzcRhXOkXVCswCI6vWyU9v5VR9uoxAo723t-rNDBKLqlOc5cUzo9uM2MU/exec", {
+method: "POST",
+body: JSON.stringify({
+school: document.querySelector('[name="school"]').value,
+grade: document.querySelector('[name="grade"]').value,
+classNum: document.querySelector('[name="classNum"]').value,
+number: document.querySelector('[name="number"]').value,
+name: document.querySelector('[name="name"]').value,
+mbti: type
+})
+});
+document.getElementById("resultBox").innerHTML=
+"<div style='background:#f3f6ff;padding:35px;border-radius:18px;text-align:center;'>"+
+"<div style='font-size:24px;font-weight:700;margin-bottom:10px;'>🎉 당신의 스포츠 MBTI</div>"+
+"<div style='font-size:42px;font-weight:800;margin-bottom:15px;'>"+type+"</div>"+
+"<div style='font-size:20px;font-weight:600;margin-bottom:10px;'>"+result.title+"</div>"+
+"<div style='font-size:16px;color:#444;margin-bottom:25px;'>"+result.desc+"</div>"+
+"<a href='"+result.link+"' target='_blank' style='display:inline-block;padding:10px 22px;background:#4A6CF7;color:white;border-radius:10px;text-decoration:none;font-weight:600;'>결과 자세히 보기</a>"+
+"<br><br>"+
+"<button onclick='location.reload()' style='padding:12px 25px;font-size:16px;background:#666;color:white;border:none;border-radius:10px;'>다시 참여하기</button>"+
+"</div>";
+document.getElementById("resultBox").style.display="block";
+document.getElementById("resultBox").scrollIntoView({behavior:"smooth"});
+  
+<!-- update -->
+  
+}</script>
+</div>
