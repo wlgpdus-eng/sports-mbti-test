@@ -302,7 +302,13 @@ type + " - " + title + "\n\n" +
 "너도 테스트 해보기👇\n" +
 "https://wlgpdus-eng.github.io/sports-mbti/";
 
-navigator.clipboard.writeText(text);
+const textarea = document.createElement("textarea");
+textarea.value = text;
+document.body.appendChild(textarea);
+textarea.select();
+document.execCommand("copy");
+document.body.removeChild(textarea);
+
 alert("결과가 복사되었습니다! 친구에게 붙여넣기 해보세요.");
 
 }
