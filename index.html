@@ -157,9 +157,7 @@ document.getElementById("mbtiForm").onsubmit=function(e){
 e.preventDefault();
 let EI=0,SN=0,TF=0,JP=0;
 for(let i=1;i<=20;i++){
-let selected=document.querySelector('input[name="q'+i+'"]:checked');
-if(!selected){alert("모든 질문에 답해주세요.");return;}
-let val=selected.value;
+let val=document.querySelector('input[name="q'+i+'"]:checked').value;
 if(i<=5){if(val==="A")EI++;else EI--;}
 else if(i<=10){if(val==="A")SN++;else SN--;}
 else if(i<=15){if(val==="A")TF++;else TF--;}
@@ -183,7 +181,6 @@ ISFP:{title:"자유 플레이어",desc:"자신만의 감각적인 움직임으�
 ESTP:{title:"승부 사냥꾼",desc:"빠른 판단과 과감한 플레이로 승부의 흐름을 바꾸는 스포츠 플레이어",link:"https://sites.google.com/view/sports-mbti/%ED%99%88/estp-%EC%8A%B9%EB%B6%80-%EC%82%AC%EB%83%A5%EA%BE%BC"},
 ESFP:{title:"에너지 스타",desc:"활기찬 에너지와 즐거운 분위기로 경기를 더욱 재미있게 만드는 스포츠 플레이어",link:"https://sites.google.com/view/sports-mbti/%ED%99%88/esfp-%EC%97%90%EB%84%88%EC%A7%80-%EC%8A%A4%ED%83%80"}
 };
-let result=descriptions[type];
 
 document.getElementById("resultBox").innerHTML=
 "<div style='background:#f3f6ff;padding:35px;border-radius:18px;text-align:center;'>"+
@@ -193,14 +190,11 @@ document.getElementById("resultBox").innerHTML=
 "<div style='font-size:16px;color:#444;margin-bottom:25px;'>"+result.desc+"</div>"+
 "<a href='"+result.link+"' target='_blank' style='display:inline-block;padding:10px 22px;background:#4A6CF7;color:white;border-radius:10px;text-decoration:none;font-weight:600;'>결과 자세히 보기</a>"+
 "<br><br>"+
-"<button onclick='shareResult(\""+type+"\",\""+result.title+"\")' style='padding:12px 25px;font-size:16px;background:#4CAF50;color:white;border:none;border-radius:10px;margin-right:10px;'>결과 공유하기</button>"+
 "<button onclick='location.reload()' style='padding:12px 25px;font-size:16px;background:#666;color:white;border:none;border-radius:10px;'>다시 참여하기</button>"+
 "</div>";
 document.getElementById("resultBox").style.display="block";
 document.getElementById("resultBox").scrollIntoView({behavior:"smooth"});
-
-}
-
+  
 <!-- update -->
   
 }</script>
