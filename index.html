@@ -294,7 +294,7 @@ document.getElementById("resultBox").innerHTML=
 document.getElementById("resultBox").style.display="block";
 document.getElementById("resultBox").scrollIntoView({behavior:"smooth"});
 
-  function shareResult(type,title){
+function shareResult(type,title){
 
 const text =
 "나의 스포츠 MBTI 결과 ⚽\n\n" +
@@ -302,17 +302,11 @@ type + " - " + title + "\n\n" +
 "너도 테스트 해보기👇\n" +
 "https://wlgpdus-eng.github.io/sports-mbti/";
 
-if(navigator.share){
-navigator.share({
-title:"스포츠 MBTI 결과",
-text:text
-});
-}else{
 navigator.clipboard.writeText(text);
-alert("결과 링크가 복사되었습니다!");
-}
+alert("결과가 복사되었습니다! 친구에게 붙여넣기 해보세요.");
 
 }
+
 <!-- update -->
   
 }</script>
