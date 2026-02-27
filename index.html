@@ -286,7 +286,7 @@ document.getElementById("resultBox").innerHTML=
 "<div style='font-size:16px;color:#444;margin-bottom:25px;'>"+result.desc+"</div>"+
 "<a href='"+result.link+"' target='_blank' style='display:inline-block;padding:10px 22px;background:#4A6CF7;color:white;border-radius:10px;text-decoration:none;font-weight:600;'>결과 자세히 보기</a>"+
 "<br><br>"+
-"<button onclick='shareResult(\""+type+"\",\""+result.title+"\")' style='padding:12px 25px;font-size:16px;background:#4CAF50;color:white;border:none;border-radius:10px;margin-right:10px;'>결과 공유하기</button>"+
+"<button onclick='shareResult(type, result.title)' style='padding:12px 25px;font-size:16px;background:#4CAF50;color:white;border:none;border-radius:10px;margin-right:10px;'>결과 공유하기</button>"+
 290 "<button onclick='location.reload()' style='padding:12px 25px;font-size:16px;background:#666;color:white;border:none;border-radius:10px;'>다시 참여하기</button>"+
 "</div>";
 document.getElementById("resultBox").style.display="block";
